@@ -15,6 +15,7 @@ class Solution:
             Max = 0;
             for j in range(i):
                 if (a[i] > a[j]):
+                    #如果当前值比之前某个值大的话，至少也得是比之前这个值的序列长1了
                     Max = max(Max, dp[j])
             dp[i] = Max + 1;
         Max = 0;
